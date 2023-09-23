@@ -1,16 +1,25 @@
 "use client"
-import { useState } from 'react'
-import styles from './page.module.css'
+
+import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export default function Home() {
 
-  const [name, setName] = useState("Aman")
+  const router = useRouter()
 
   return (
-    <main className={styles.main}>
+    <main>
       <h1>Basic Routing | Make New Page </h1>
-      <h2>My name is {name}</h2>
-      <button onClick={() => setName(name==="Aman" ? "Umang" : "Aman")}>CLICK ME</button>
+      <Link href="/login">Go to login page</Link>
+      <br />
+      <br />
+      <Link href="/about">Go to about page</Link>
+      <br />
+      <br />
+      <button onClick={() => router.push("/login")}>Go to login page</button>
+      <br />
+      <br />
+      <button onClick={() => router.push("/about")}>Go to about page</button>
       {/* we cant use events in next component directly, because in ssr, events don't work. firstly we have to make the component client side page, which is done using "use client" at the top of th codes. */}
     </main>
   )
