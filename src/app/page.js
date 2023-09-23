@@ -3,7 +3,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Basic Routing | Make New Page </h1>
+      <h1>Catch all segments</h1>
     </main>
   )
 }
