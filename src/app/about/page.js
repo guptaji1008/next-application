@@ -13,6 +13,12 @@ export default function page() {
       <br />
       <br />
       <button onClick={() => router.push('/')}>To go home page</button>
+      <br />
+      <br />
+      <button onClick={() => router.push('/about/aboutstudent')}>To go about student</button>
+      <br />
+      <br />
+      <button onClick={() => router.push('/about/aboutcollege')}>To go about college</button>
     </div>
   )
 }
