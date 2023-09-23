@@ -4,6 +4,7 @@
 
 .about-buttons {
     border: 2px solid black;
+    margin-right: 5rem;
 }
 
 .about-buttons button {
@@ -15,6 +16,5 @@
 }
 
 .about-content {
-    margin-left: 5rem;
     text-align: center;
 }

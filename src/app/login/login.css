@@ -4,6 +4,7 @@
 
 .login-buttons {
     border: 2px solid black;
+    margin-right: 5rem;
 }
 
 .login-buttons button {
@@ -15,6 +16,5 @@
 }
 
 .login-content {
-    margin-left: 5rem;
     text-align: center;
 }
