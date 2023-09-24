@@ -1,16 +1,15 @@
 
+import custom from './custom.module.css'
+import page from './page.module.css'
+import style from '@/style/style.module.css'
+
 export default function Home() {
 
   return (
     <main>
-      <ul>
-        <li>
-          <h1>Fetching data from an api using SERVER side and CLIENT side concept</h1>
-        </li>
-        <li>
-          <h1>How to use event handler function inside server side rendered page?</h1>
-        </li>
-      </ul>
+      <h1 className={custom.main1}>Modular css and its properties</h1>
+      <h1 className={page.main1}>Modular css</h1>
+      <h1 className={style.main1}>Modular css</h1>
     </main>
   )
 }
