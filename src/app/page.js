@@ -1,15 +1,16 @@
-
-import custom from './custom.module.css'
-import page from './page.module.css'
-import style from '@/style/style.module.css'
+import Image from "next/image";
+import picture from '../../public/moneyImage.jpg'
 
 export default function Home() {
 
   return (
     <main>
-      <h1 className={custom.main1}>Modular css and its properties</h1>
-      <h1 className={page.main1}>Modular css</h1>
-      <h1 className={style.main1}>Modular css</h1>
+      <h1>Image Optimization</h1>
+      <Image 
+      src={picture}
+      width={500}
+      height={400}
+      />
     </main>
   )
 }
