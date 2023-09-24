@@ -18,7 +18,7 @@ export default function page() {
 
   return (
     <div>
-      <h1>Products list : </h1>
+      <h1>Products list rendered from client side : </h1>
       {
         productArr.length !== 0 ? <div>
             {
